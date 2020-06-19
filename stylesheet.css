@@ -9,6 +9,14 @@ h1, h2, h3, h4, h5, h6, p, div {
     padding: 0;
 }
 
+h1, h2, h3 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h4, h5, p, a {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 header {
     height: 65px;
     width: 100%;

@@ -2,9 +2,7 @@
     box-sizing: border-box;
   }
   
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -17,18 +15,19 @@ h4, h5, p, a {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* Tollbar */
+
 header {
     height: 65px;
     width: 100%;
     background-color: rgba(34, 49, 52, 0.9);
     position :fixed;
     top: 0;
-    z-index: 10;
 }
 
 .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10vw;
     margin: 0 auto;
 }
 
@@ -67,26 +66,114 @@ header {
     display: none;
 }
 
+/* Header */
+
 .top-wrapper {
     background-position: center;
-    background-image: linear-gradient(to bottom, rgba(6, 35, 44, 0.52), rgba(7, 27, 53, 0.73)),
+    background-image: linear-gradient(to bottom, rgba(6, 35, 44, 0.733), rgba(7, 27, 53, 0.73)),
     url('https://www.industryforum.co.uk/wp-content/uploads/sites/6/2018/10/Industial-Components.jpg');
     background-size: cover;
     min-height: 40vw;
-    padding: 15vw 0 15vw 0;
+    padding: 14vw 0 14vw 0;
     color: white;
     text-align: center;
-    
 }
 
 .top-wrapper h1 {
     opacity: 0.9;
     font-size: 45px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
   }
   
-  .top-wrapper p {
+  .top-wrapper h3 {
     opacity: 0.8;
-    margin-bottom: 3px;
   }
+
+/* Services */
+.service-wrapper {
+    margin: 3vw 0;
+}
+
+.service-heading {
+    font-weight: bold;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.service-items {
+    display: inline-block
+}
+
+.service-item {
+    padding: 2vw;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.service-item h3{
+    margin: 1vw 0;
+}
+
+.service-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #09273bf6;
+}
+  
+.service-overlay:hover  {
+    opacity: 1;
+}
+  
+.service-text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    padding: 3vw 2vw;
+}
+
+/* Contact */
+
+.contact-wrapper{
+    margin: 3vw 0;
+    font-weight: bold;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.contact-wrapper p{
+    font-weight: normal;
+    margin: 0;
+}
+
+.contact-section {
+    padding: 1vw;
+    width: 50%;
+    display: inline-block;
+}
+
+.contact-item {
+    color: gray;
+    text-align: left;
+}
+
+
+
+.contact-item span {
+    margin-right: 2vw;
+}

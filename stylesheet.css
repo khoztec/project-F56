@@ -20,7 +20,8 @@ h4, h5, p, a {
 header {
     height: 65px;
     width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
+    /* background-color: rgba(34, 49, 52, 0.9); */
+    background-color: white;
     position :fixed;
     top: 0;
 }
@@ -43,7 +44,8 @@ header {
 .header-right a {
     line-height: 65px;
     padding: 0 25px;
-    color: white;
+    /*color: white; */
+    color: darkblue;
     display: block;
     float: left;
     transition: all 0.5s;
@@ -52,10 +54,9 @@ header {
 .header-right a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
-
 .logo {
-    width: 124px;
-    margin-top: 20px;
+    width: 75px;
+    margin-top: 0px;
 }
 
 .menu-icon {
@@ -147,23 +148,74 @@ header {
     padding: 3vw 2vw;
 }
 
-/* Contact */
-
-.contact-wrapper{
+/* Location */
+.location-wrapper{   
+         
     margin: 3vw 0;
     font-weight: bold;
     text-align: center;
-    color: darkslategrey;
+    color:darkslategrey;
 }
 
-.contact-wrapper p{
+.location-wrapper p{
     font-weight: normal;
     margin: 0;
 }
 
+.location {
+    float: left;
+    width: 25%;
+  }
+
+ .location-icon {
+    position: relative;
+  }
+  
+  .location-icon p {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    color: white;
+  }
+
+  .location text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  
+  
+/* Contact */
+
+.contact-wrapper{        
+    margin: 2vw 0;
+    font-weight: bold;
+    text-align: center;
+    color: darkslategrey;
+    
+}
+
+.l_container {
+    width: 40%;
+    margin: 3vw auto;    
+    padding: 2vw;    
+    display: inline-block;
+    background-color: lightgray ;
+    border : 2px solid darkslategrey;
+}
+
+
+.contact-wrapper p{
+    text-align: left;
+    margin: 0;
+}
+
 .contact-section {
-    padding: 1vw;
-    width: 50%;
+    padding: 2vw;
+    width: 100%;
     display: inline-block;
 }
 
@@ -172,8 +224,64 @@ header {
     text-align: left;
 }
 
+/*.contact-item span {
+    margin-right: 1vw;
+}*/
 
-
-.contact-item span {
-    margin-right: 2vw;
+.contact-section li {
+    list-style: none;
 }
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+  input {
+    padding: 3px;
+    width : 20vw;    
+    margin: auto;
+    font-size : pxtoem(16,16);
+    border : 1px solid #dee7ec;    
+    float: right;
+  }
+  
+  textarea {
+    padding: 1vw;
+    width : 30vw;
+    height: 10vw;
+    margin: auto;
+    font-size : pxtoem(16,16);
+    border : 1px solid #dee7ec;    
+  }
+  /* Tambahkan CSS untuk contact-submit */
+
+  .button {          
+    transition-duration: 0.4s;  
+    
+  }
+  
+  .button:hover {
+    background-color: darkslategray;
+    color: white;
+  }
+
+
+  .footer-up {
+    background-color:darkslategrey;
+    color: #fff;
+    height: 20vw;
+    padding: 20px;
+  }
+  
+  .footer-info {
+    width: 33%;
+    float: left;     
+  }
+
+  .footer-item span {
+    margin-right: 1vw;
+}
+  .footer-service-list {
+    list-style: none;
+    float: center;
+  }
+  
+  
+  
+  

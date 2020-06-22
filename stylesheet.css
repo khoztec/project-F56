@@ -20,9 +20,10 @@ h4, h5, p, a {
 header {
     height: 65px;
     width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     position :fixed;
     top: 0;
+    z-index: 10;
 }
 
 .container {
@@ -35,6 +36,10 @@ header {
     float: left;
 }
 
+.header-left img {
+    max-width: 2vw;
+}
+
 .header-right {
     float: right;
     margin-right: -25px;
@@ -43,9 +48,10 @@ header {
 .header-right a {
     line-height: 65px;
     padding: 0 25px;
-    color: white;
+    color: rgb(1, 39, 65);
     display: block;
     float: left;
+    text-decoration: none;
     transition: all 0.5s;
 }
 
@@ -90,6 +96,7 @@ header {
   }
 
 /* Services */
+
 .service-wrapper {
     margin: 3vw 0;
 }
@@ -167,13 +174,61 @@ header {
     display: inline-block;
 }
 
-.contact-item {
-    color: gray;
-    text-align: left;
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(51, 51, 51);
+    padding: 1vw 3vw;
+    width: 100%;
+    height: auto;
+    color: darkgrey;
 }
 
+footer .container {
+    display: inline-block;
+}
 
+.footer-content {
+    width: 50%;
+    float: left;
+    padding: 1vw;
+    margin: 0 auto;
+}
 
-.contact-item span {
+.footer-content img {
+    max-width: 8vw;
+}
+
+.footer-content h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-contact {
+    padding: 1vw 0;
+}
+
+.footer-contact span {
     margin-right: 2vw;
+}
+
+.footer-contact p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list {
+    padding: 1vw 0;
+    text-align: right
+}
+
+.footer-list a {
+    margin: 2vw 0;
+    display: block;
+    text-decoration: none;
+    color: darkgrey;
+    padding: 0;
 }

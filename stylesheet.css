@@ -96,6 +96,27 @@ header {
     opacity: 0.8;
   }
 
+
+
+
+/*About us*/  
+.about-wrapper {  
+    margin: 3vw 0;
+    font-weight: bold;
+    text-align: center;
+    color:darkslategrey;
+}
+.about-items {
+    display: inline-block
+}
+
+.about-item {
+    padding: 2vw;
+    float: left;
+    width: 50%;
+    
+}  
+
 /* Services */
 
 .service-wrapper {
@@ -156,7 +177,7 @@ header {
 }
 
 /* Location */
-.location-wrapper{   
+.location-wrapper{ 
          
     margin: 3vw 0;
     font-weight: bold;
@@ -236,6 +257,7 @@ footer {
     width: 100%;
     height: auto;
     color: darkgrey;
+    
 }
 
 footer .container {
@@ -288,10 +310,11 @@ footer .container {
 
 
   .footer-up {
-    background-color:darkslategrey;
+    background-color:rgba(49, 43, 43, 0.7);
     color: #fff;
     height: 20vw;
     padding: 20px;
+    box-shadow: 5px 10px darkgray;
   }
   
   .footer-info {

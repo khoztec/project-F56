@@ -1,9 +1,23 @@
 /* Untuk Tablet */
-@media all and (max-width: 1000px) {
-    .top-wrapper h1 {
-      font-size: 32px;
+@media all and (max-width: 1024px) {
+/* Toolbar */
+    header {
+      height: 7vw;
+    }
+
+    .header-left img {
+      max-width: 8vw;
     }
     
+/* Services */
+    .service-item h3{
+      font-size: 2vw;
+    }
+
+    .service-item {
+      width: 50%;
+    }
+
     .lesson {
       width: 50%;
       margin-bottom: 50px;
@@ -16,42 +30,119 @@
   
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
-    footer {
-      text-align: center;
+/* Tollbar */
+    header {
+      height: 16vw;
     }
+
     
-    .top-wrapper {
-      text-align: left;
+    header .container{
+      padding: 0;
     }
-    
-    .top-wrapper h1 {
-      font-size: 24px;
-      line-height: 36px;
+
+    .header-left img {
+      max-width: 22vw;
     }
-    
-    .btn {
-      width: 100%;
-    }
-    
-    .facebook {
-      margin-bottom: 10px;
-    }
-    
-    .top-wrapper p {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    
-    .header-right {
-      display: none;
-    }
-    
+
     .menu-icon {
       display: block;
     }
-    
-    .lesson {
-      width: 100%;
-      margin-bottom: 50px;
+
+    .header-right a {
+      display: none
     }
+
+    .header-right span {
+      display: inline-block;
+    }
+
+/* Header */
+    .top-wrapper {
+      min-height: 80vw;
+      padding: 40vw 5vw;
+    }
+
+    .top-wrapper h1 {
+      margin-bottom: 10vw;
+    }
+
+/* About */
+    .about-item {
+      width: 100%;
+      margin-top: 5vw;
+    }
+
+/* Service */
+    .service-item {
+      width: 100%;
+    }
+
+    .service-item h3{
+      font-size: 7vw;
+    }
+
+/* Contact */
+    .locations {
+      width: 100%;
+    }
+
+    .l_container {
+      width: 100%;
+    }
+
+    .contact-desc {
+      font-size: 5vw;
+      font-size: light;
+    }
+
+    .contact-list input {
+      height: 7vw;
+      width: 100%;
+    }
+
+    .contact-list textarea {
+      height: 15vw;
+      width: 100%;
+    }
+
+    .contact-list label {
+      font-size: 4vw;
+      font-weight: 300;
+    }
+
+/* Footer */
+    .footer-img {
+      max-width: 76vw;
+      float: left;
+      display: block
+    }
+
+    .footer-info {
+      width: 100%;
+      padding: 3vw;
+    }
+
+    .footer-item p {
+      margin: 0;
+      font-size: 4vw;
+    }
+
+    .footer-team {
+      text-align: left;
+    }
+
+    .footer-teamlist {
+      text-align: left;
+    }
+
+    .footer-down {
+      background-color: rgb(44, 44, 44);
+      color: white;
+      width: 100%;
+      padding: 3vw;
+    }
+
+    .footer-down p {
+      font-size: 3vw;
   }
+}

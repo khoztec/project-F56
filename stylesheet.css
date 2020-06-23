@@ -4,16 +4,19 @@
   
 html, body {
     margin: 0;
-    padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1, h2, h3 {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h4, h5, p, a {
     font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -23,7 +26,7 @@ h1 {
 /* Tollbar */
 
 header {
-    height: 65px;
+    height: 5vw;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position :fixed;
@@ -55,7 +58,7 @@ header {
     line-height: 65px;
     padding: 0 25px;
     /*color: white; */
-    color: darkblue;
+    color: rgb(10, 27, 53);
     display: block;
     float: left;
     text-decoration: none;
@@ -65,15 +68,21 @@ header {
 .header-right a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
+
+.header-right span {
+    color: black;
+    display: none;
+}
+
 .logo {
     margin-top: 0px;
 }
 
 .menu-icon {
-    color: white;
+    color: rgb(9, 9, 41);
     float: right;
     font-size: 25px;
-    padding: 21px 0;
+    padding: 2vw;
     display: none;
 }
 
@@ -111,12 +120,18 @@ header {
     color:darkslategrey;
 }
 .about-items {
-    display: inline-block
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-heading {
+    padding: 2vw;
 }
 
 .about-item {
-    padding: 2vw;
+    padding: 0vw 2vw;
     float: left;
+    flex: auto;
     width: 50%;
     text-align: justify;
 }
@@ -132,18 +147,20 @@ header {
 }
 
 .service-heading {
+    padding: 2vw;
     font-weight: bold;
     text-align: center;
     color: darkslategrey;
 }
 
 .service-items {
-    display: inline-block
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .service-item {
+    flex: auto;
     padding: 2vw;
-    float: left;
     width: 25%;
     text-align: center;
 }
@@ -191,6 +208,10 @@ header {
     font-weight: bold;
     text-align: center;
     color:darkslategrey;
+}
+
+.location-heading {
+    padding: 2vw;
 }
 
 .location-wrapper p{
@@ -316,10 +337,6 @@ header {
 }
 
 .contact-list input {
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.contact-list input {
     border: darkslategray solid 1px;
     border-radius: 5px;
     height: 3vw;
@@ -364,7 +381,8 @@ footer {
 
   .footer-up {
     color: #fff;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     padding: 1vw 3vw;
     width: 100%;
   }
@@ -372,6 +390,7 @@ footer {
   .footer-info {
     width: 50%;
     float: left;
+    flex: auto;
     padding: 1vw;
   }
 
@@ -386,15 +405,14 @@ footer {
       margin-top: 1vw;
   }
 
-.footer-item span {
-    margin-right: 3vw;
-}
+    .footer-item span {
+        margin-right: 3vw;
+    }
 
-.footer-item p {
-    margin: 0;
-    font-size: 1.2vw;
-    
-}
+    .footer-item p {
+        margin: 0;
+        font-size: 1.2vw;
+    }
 
 .footer-item a {
     text-decoration: none;

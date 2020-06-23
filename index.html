@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project F56</title>
     <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css" rel="stylesheet">
@@ -13,14 +14,13 @@
     <header>
         <div class="container">
             <div class="header-left">
-                <img class="logo" src="./static/main_logo.png">
+                <img src="./static/1upnew.png">
             </div>
             <span class="fa fa-bars menu-icon"></span>
             <div class="header-right">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#service">Services</a>
-                <a href="#client">Client</a>
                 <a href="#contact">Contact Us</a>
             </div>
         </div>
@@ -31,21 +31,21 @@
             <h3>Level up your business, one stage at a time</h3>
     </div>
 
-    <!-- Tambahkan About Us di sini -->
-    <div class="about-wrapper">
+    <div class="about-wrapper" id="about">
         <div class="container">
             <div class="about-heading">
                 <h1>About Us</h1>
             </div>
             <div class="about-items">
                 <div class="about-item">
-                    <p align ='justify'>Founded in 2014, 1UP CONSULTANT is fast becoming one of the most trusted independent companies in terms of supporting the clients with innovation, service and support. Our reputation is a result of hard work, attention to detail, honesty and professionalism. From our point of view, nothing is more important than standing over our work - and we do so without question. </p>
-                    <p align ='justify'>All our team are totally familiar with industry requirements and continually update their skills to ensure they are totally au fait with changes in technology. All our equipment is state of the art, the result being that our solutions will ensure optimum performance levels once installed. We believes our clients will level up their business, one stage at a time.</p>
-                </div>                
+                    <img width="100%" src="https://sawebfilesprod001.blob.core.windows.net/images/QAA.jpg?sv=2017-04-17&sr=b&si=DNNFileManagerPolicy&sig=656XCd5zwRtmRpk3BFAIQaa%2Bwgzs7E1Q6BkwJqjNxd8%3D">                    
+                </div>
                 <div class="about-item">
-                    
-                        <img src="./static/aboutus.jpg">                    
-                   
+                    <p>
+                        Founded in 2014, 1UP CONSULTANT is fast becoming one of the most trusted independent companies in terms of supporting the clients with innovation, service and support. Our reputation is a result of hard work, attention to detail, honesty and professionalism.
+                        <br>
+                        From our point of view, nothing is more important than standing over our work - and we do so without question. All our team are totally familiar with industry requirements and continually update their skills to ensure they are totally au fait with changes in technology. All our equipment is state of the art, the result being that our solutions will ensure optimum performance levels once installed. We believes our clients will level up their business, one stage at a time.
+                    </p>
                 </div>
             </div>
         </div>   
@@ -106,132 +106,108 @@
         </div>
     </div>
     
-    
-    <!-- Tambahkan location di sini -->
-    <div class="location-wrapper">
+    <div class="location-wrapper" id="contact">
         <div class="container">
             <div class="heading">
-                <h1>OUR LOCATION</h1>
+                <h1>Contact Us</h1>
             </div>
             <div class="locations">
-                <div class="location">
-                <div class="location-icon">
-                    <img src="./static/lokasi1.png">
-                    <p>JAKARTA</p>
+                <div class="location-item">
+                    <div class="location-image">
+                        <img src="./static/lokasi1.png"width="100%">
+                        <div class="location-overlay">
+                            <div class="location-text">
+                                <h2>JAKARTA</h2>
+                                <br>
+                                <p>Jl. Panjang Sekali 123, Gandaria, Jakarta Selatan</p>
+                                <br>
+                                <p>(021) 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-contents">Jl. Panjang Sekali 123, </p>
-                <p class="text-contents">Gandaria, Jakarta Selatan</p>
-                </div>
-                
-                <div class="location">
-                <div class="location-icon">
-                    <img src="./static/lokasi2.png">
-                    <p>BANDUNG</p>
-                </div>
-                <p class="text-contents">Jl. Kota Kembang No. 456,</p>
-                <p class="text-contents">Bandung, Jawa Barat</p>
-                </div>            
-                <div class="location">
-                <div class="location-icon">
-                    <img src="./static/lokasi3.png">
-                    <p>SURABAYA</p>
-                </div>
-                <p class="text-contents">Jl. Kota Pahlawan No. 789 </p>
-                <p class="text-contents">Surabaya, Jawa Timur</p>
-                </div>
-                <div class="location">
-                <div class="location-icon">
-                    <img src="./static/lokasi4.png">
-                    <p>BALI</p>
-                </div>
-                <p class="text-contents">Jl. Pulau Dewata No.1011, </p>
-                <p class="text-contents">Denpasar, Bali</p>
-                </div>
-                <div class="clear"></div>            
+                <div class="location-item">
+                    <div class="location-image">
+                        <img src="./static/lokasi3.png"width="100%">
+                        <div class="location-overlay">
+                            <div class="location-text">
+                                <h2>SURABAYA</h2>
+                                <br>
+                                <p>Jl. Kota Pahlawan No. 789, Surabaya, Jawa Timur</p>
+                                <br>
+                                <p>(031) 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
+            <div class="l_container">           
+                <div class="contact-section">
+                    <div class="contact-desc">
+                        Send us message for more info and special offerings
+                    </div>
+                    <div class="contact-list">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" />
+                    </div>
+                    <div class="contact-list">
+                        <label for="phone">Phone</label>
+                        <input type="phone" name="phone"  />
+                    </div>
+                    <div class="contact-list">
+                        <label for="email">Email</label>
+                        <input type="email" name="email"  />
+                    </div>
+                    <div class="contact-list">
+                        <label for="comments">Message </label>
+                        <textarea name="message"></textarea></textarea>
+                    </div>
+                    <div class="contact-list">
+                        <input class ="button" type="submit" value="Submit"/>
+                    </div>
+                    
+                </div>
+        </div>     
         </div>   
     </div>
-      
-    <!-- End Location -->
-    
-    <!-- Contact Us -->
-    <div class="contact-wrapper">        
-        <div class="l_container">           
-                <h1>Contact Us</h1>
-                <h5> Contact us for more information and special prices</h5>
-                <div class="contact-section">
-                    <ul>
-                        <li>
-                            <p>
-                                <label for="name">Name</label>
-                                <input type="text" name="name" />
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <label for="phone">Phone</label>
-                                <input type="phone" name="phone"  />
-                            </p>
-                        </li> 
-                        <li>
-                            <p>
-                                <label for="email">Email</label>
-                                <input type="email" name="email"  />
-                            </p>
-                        </li> 
-                        <li>
-                            <br>
-                            <p>
-                                <label for="comments">Message </label>
-                                <textarea name="message"></textarea></textarea>
-                            </p>
-                        </li>                                               
-                    </ul>
-                    <input class ="button" type="submit" value="Submit"/>    
+    <footer>
+            <div class="footer-up">
+                <div class="footer-info">
+                    <div class="footer-img">
+                        <img src="./static/1upnew.png" width="100%">
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-item"> 
+                            <p><span class="mdi mdi-home"></span><a href="https://goo.gl/maps/KtpeGK9LWFQobbJX8" target="_blank">Jl. Progate DTS Block II No. F56 - Jakarta Pusat<a> </p>
+                        </div>
+                        <div class="footer-item">
+                            <p><span class="mdi mdi-phone"></span><a href="tel:+62212345678">(021) 1234-5678<a> </p>
+                        </div>
+                        <div class="footer-item">
+                            <p><span class="mdi mdi-gmail"></span> <a href="mailto:kontak@1upconsultant.com">kontak@1upconsultant.com </a></p>
+                        </div>
+                        <div class="footer-item">
+                            <p><span class="mdi mdi-instagram"></span>1upconsultant</p>
+                        </div>    
+                    </div>
                 </div>
-                                                     
-        </div>            
-    </div>
-
-    <!-- Tambahkan footer disini -->
-    <div class="footer-up">        
-        <div class="row">
-            <div class="footer-info">
-                <img src="./static/main_logo.png">
-                <p align ='left'>OUR TEAM F56</p>
-                <p align ='left'>Muhamad Khosyi Ibrahim &#45; 0447977141-301</p>
-                <p align ='left'>Melia Angelita Jaya Lim &#45; 0447977100-10</p>   
+                <div class="footer-info">
+                    <div class="footer-team">
+                        <h2>THE F-56 TEAM</h2>
+                    </div>
+                    <div class="footer-teamlist">
+                        <p>Muhamad Khosyi Ibrahim &#45; 0447977141-301</p>
+                        <p>Melia Angelita Jaya Lim &#45; 0447977100-10</p>
+                    </div>
+                </div>  
             </div>
-            <div class="footer-info">
-                <p><u></u></p>
-            </div>
-            <div class="footer-info">
-                <p><u>Our Contact</u></p>
-                <div class="footer-item"> 
-                    <p><span class="mdi mdi-home"></span><a href="https://goo.gl/maps/KtpeGK9LWFQobbJX8" target="_blank">Jl. Progate DTS Block II No. F56 - Jakarta Pusat<a> </p>
-                </div>
-                <div class="footer-item">
-                    <p><span class="mdi mdi-phone"></span><a href="tel:+62212345678">(021) 1234-5678<a> </p>
-                </div>
-                <div class="footer-item">
-                    
-                    <p><span class="mdi mdi-gmail"></span> <a href="mailto:kontak@1upconsultant.com">kontak@1upconsultant.com </a></p>
-                </div>
-                <div class="footer-item">
-                    <p><span class="mdi mdi-instagram"></span>1upconsultant</p>
-                </div>    
-                
-            </div>
-        </div>      
-    </div>
-
-    <div class="footer-down">
-      <div class="container">
-        <div class="text-center">
-          <p>&copy;2020 PT.1Up All Rights Reserved — Made By Group F56 DTS Batch 2 with Progate</p>
+        <div class="footer-down">
+              <p>&copy;2020 1UP Consultants. All Rights Reserved — Made By Group F56 DTS Batch 2 with Progate</p>
         </div>
-      </div>
-    </div>
+    </footer>
+
+
+    
 
 </body>
 </html>
